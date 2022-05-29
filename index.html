@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section class="w-100 vh-100 ">
+        <nav id="navbare" class="d-none navbar navbar-dark navbar-expand-lg shadow-lg py-3"style="background-color: #24353f;">
+            <div class="container">
+              <a class="nava text-decoration-none navbar-brand" href="#">SMART LOGIN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button onclick="lougOut();" class="btn btn-outline-warning w-100 mt-3" type="submit">Logout</button>
+                        </li>        
+                    </ul>
+              </div>
+            </div>
+        </nav>
+                    
+
+        <div class="pt-5 container d-flex justify-content-center align-items-center">
+
+            <div id="replaceSignUp" class="w-75  m-auto mt-5 pt-4 pb-4 text-center shadow-lg ">
+                <h1>Smart Login System</h1>
+                <div class="w-75 m-auto mt-4 pb-4">
+                    <input id="userNameinput" type="text" class="form-control mb-3 bg-transparent" placeholder="Enter your name">
+                    <input id="userEmailinput" type="email" class="form-control mb-3 bg-transparent" placeholder="Enter your email">
+                    <input id="userPasswordinput" type="password" class="form-control mb-5 bg-transparent" placeholder="Enter your password">
+                    <div>
+                        <p id="confirmation message" class="d-none text-success fs-6">Success</p>
+                        <P id="errorInformSignUp"class="text-danger d-none">All inputs is required</P>
+                    </div>
+                    <button id="addNewoUser"  class="form-control mb-3 bg-transparent btn-outline-info">Sign Up</button>
+                    <h4> You have an account? <a id="openLoginSignUp" class="text-white">Signin</a></h4>
+                </div>
+            </div>
+
+            <div id="replaceSignIn" class="w-75 d-none m-auto mt-2 pt-5 pb-5 text-center shadow-lg border-0 rounded-3 ">
+                <h1>Smart Login System</h1>
+                <div class="w-75 m-auto mt-4 pb-4">
+                    <input id="emailUser" type="email" class="form-control mb-4 bg-transparent" placeholder="Enter your email">
+                    <input id="passUser" type="password" class="form-control mb-5 bg-transparent" placeholder="Enter your password">
+                    <div id="errorInformSignIn" class="d-none"><P class="text-danger">All inputs is required</P></div>
+                    <button id="openNewoUser" class="form-control mb-4 bg-transparent btn-outline-info">Login</button>
+
+                    <h4>Don’t have an account? <a id="openLoginSignIn" class="text-white">Sign Up</a></h4>
+                </div>
+
+            </div>
+
+
+            
+
+            <div id="replaceSign" class="w-75 d-none m-auto mt-5 pt-5 pb-5 text-center shadow-lg border-0 rounded-3 ">
+                <h1 id="masseg">hello</h1>
+
+            </div>
+
+        </div>
+
+    </section>
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
